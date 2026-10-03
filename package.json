@@ -1,0 +1,16 @@
+{
+  "name": "xingye-smart-home-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "星野智家 - 零依赖全栈电子商务演示系统",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "check": "node --check server.mjs && node --check public/app.js && node --check public/admin.js && node --check lib/store.mjs && node --check lib/support.mjs",
+    "test": "node --test --test-isolation=none test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

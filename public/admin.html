@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="星野智家电子商务系统管理后台">
+  <meta name="theme-color" content="#164f3d">
+  <title>星野智家 · 管理后台</title>
+  <link rel="icon" href="/assets/logo.svg">
+  <link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+  <div class="admin-loading" id="admin-loading">
+    <img src="/assets/logo.svg" alt="" width="52" height="52">
+    <div class="loading-bar"><i></i></div>
+    <p>正在进入管理后台...</p>
+  </div>
+
+  <main class="login-screen" id="login-screen" hidden>
+    <section class="login-story">
+      <div class="login-brand"><img src="/assets/logo.svg" alt="" width="50" height="50"><span><strong>星野智家</strong><small>XINGYE ADMIN</small></span></div>
+      <div class="login-story-copy">
+        <p class="admin-eyebrow">Commerce Operations</p>
+        <h1>把商品、订单与客户服务放在一张工作台。</h1>
+        <p>库存预警、订单流转、商品版本、优惠设置和客服会话均实时写入业务数据。</p>
+        <div class="login-features">
+          <div><strong>12</strong><span>商品 SKU 演示数据</span></div>
+          <div><strong>5</strong><span>核心运营模块</span></div>
+          <div><strong>24h</strong><span>客服消息留档</span></div>
+        </div>
+      </div>
+      <div class="login-note"><svg><use href="#icon-shield"></use></svg><span>后台会话使用 HttpOnly Cookie，并校验同源写操作。</span></div>
+    </section>
+    <section class="login-form-side">
+      <form class="login-form" id="login-form">
+        <p class="admin-eyebrow">后台登录</p>
+        <h2>欢迎回来</h2>
+        <p>使用管理员账号继续处理今日业务。</p>
+        <label for="admin-username">用户名</label>
+        <div class="input-with-icon"><svg><use href="#icon-user"></use></svg><input id="admin-username" name="username" required autocomplete="username" placeholder="请输入用户名"></div>
+        <label for="admin-password">密码</label>
+        <div class="input-with-icon"><svg><use href="#icon-lock"></use></svg><input id="admin-password" name="password" type="password" required autocomplete="current-password" placeholder="请输入密码"></div>
+        <p class="login-error" id="login-error"></p>
+        <button class="admin-button admin-button-primary admin-button-wide" type="submit">登录后台</button>
+        <button class="demo-login" id="demo-login" type="button">填入演示账号 admin / admin123</button>
+        <a class="back-store" href="/">返回商城首页</a>
+      </form>
+    </section>
+  </main>
+
+  <div class="admin-app" id="admin-app" hidden>
+    <aside class="admin-sidebar">
+      <a class="admin-brand" href="/admin.html"><img src="/assets/logo.svg" alt="" width="40" height="40"><span><strong>星野智家</strong><small>运营后台</small></span></a>
+      <nav id="admin-nav">
+        <button class="active" type="button" data-view="dashboard"><svg><use href="#icon-dashboard"></use></svg><span>仪表盘</span></button>
+        <button type="button" data-view="products"><svg><use href="#icon-box"></use></svg><span>商品管理</span></button>
+        <button type="button" data-view="orders"><svg><use href="#icon-receipt"></use></svg><span>订单管理</span><b id="order-menu-badge"></b></button>
+        <button type="button" data-view="support"><svg><use href="#icon-chat"></use></svg><span>客服中心</span><b id="support-menu-badge"></b></button>
+        <button type="button" data-view="settings"><svg><use href="#icon-settings"></use></svg><span>营销设置</span></button>
+      </nav>
+      <div class="sidebar-footer"><a href="/" target="_blank" rel="noreferrer"><svg><use href="#icon-external"></use></svg><span>访问商城</span></a><button id="logout-button" type="button"><svg><use href="#icon-logout"></use></svg><span>退出登录</span></button></div>
+    </aside>
+    <section class="admin-workspace">
+      <header class="admin-topbar">
+        <div><p class="admin-eyebrow">星野智家运营中心</p><h1 id="admin-page-title">经营仪表盘</h1></div>
+        <div class="admin-user"><span class="admin-user-avatar">管</span><div><strong id="admin-user-name">管理员</strong><small>超级管理员</small></div><button class="admin-icon-button" id="refresh-button" type="button" aria-label="刷新数据"><svg><use href="#icon-refresh"></use></svg></button></div>
+      </header>
+      <main class="admin-content" id="admin-content"></main>
+    </section>
+  </div>
+
+  <dialog class="admin-dialog" id="admin-dialog"><div id="admin-dialog-content"></div></dialog>
+  <div class="admin-toast-region" id="admin-toast-region" aria-live="polite"></div>
+
+  <svg class="admin-sprite" aria-hidden="true">
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 7.8 7.5 9.5 4.4-1.7 7.5-4.9 7.5-9.5V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="icon-dashboard" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></symbol>
+    <symbol id="icon-box" viewBox="0 0 24 24"><path d="m4 7 8-4 8 4v10l-8 4-8-4zM4 7l8 4 8-4M12 11v10"/></symbol>
+    <symbol id="icon-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></symbol>
+    <symbol id="icon-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.6v-.2h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 13v6H5V6h6"/></symbol>
+    <symbol id="icon-logout" viewBox="0 0 24 24"><path d="M10 4H5v16h5M14 8l4 4-4 4M8 12h10"/></symbol>
+    <symbol id="icon-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 8a7 7 0 0 1 11.7-1L20 12M4 12l2.2 5a7 7 0 0 0 11.7-1"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="icon-edit" viewBox="0 0 24 24"><path d="m4 20 4-1 11-11-3-3L5 16zM13 8l3 3"/></symbol>
+    <symbol id="icon-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14M10 11v6M14 11v6"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="icon-alert" viewBox="0 0 24 24"><path d="M12 3 2.5 20h19zM12 9v5M12 17h.01"/></symbol>
+    <symbol id="icon-trend" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-9"/><path d="M15 6h6v6"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="m8 5 7 7-7 7"/></symbol>
+  </svg>
+  <script type="module" src="/admin.js"></script>
+</body>
+</html>

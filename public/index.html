@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="星野智家 - 智能清洁、空气管理、照明、咖啡与家庭安全设备官方商城">
+  <meta name="theme-color" content="#1f6f54">
+  <title>星野智家 · 智能生活官方商城</title>
+  <link rel="icon" href="/assets/logo.svg">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+  <div class="announcement" id="announcement">新客立减 100 元 · 满 299 元全国包邮</div>
+
+  <header class="site-header" id="site-header">
+    <div class="header-main page-shell">
+      <button class="icon-button mobile-only" id="mobile-menu-button" type="button" aria-label="打开导航">
+        <svg aria-hidden="true"><use href="#icon-menu"></use></svg>
+      </button>
+      <a class="brand" href="/" aria-label="星野智家首页">
+        <img src="/assets/logo.svg" alt="" width="42" height="42">
+        <span><strong>星野智家</strong><small>XINGYE SMART HOME</small></span>
+      </a>
+      <form class="header-search" id="header-search" role="search">
+        <svg aria-hidden="true"><use href="#icon-search"></use></svg>
+        <input id="search-input" name="q" type="search" placeholder="搜索商品、功能或场景" autocomplete="off" aria-label="搜索商品">
+        <button type="submit">搜索</button>
+      </form>
+      <div class="header-actions">
+        <button class="header-action text-action" id="track-order-button" type="button">
+          <svg aria-hidden="true"><use href="#icon-truck"></use></svg><span>查物流</span>
+        </button>
+        <button class="header-action text-action" id="member-button" type="button">
+          <svg aria-hidden="true"><use href="#icon-user"></use></svg><span>会员中心</span>
+        </button>
+        <button class="header-action cart-action" id="cart-button" type="button">
+          <svg aria-hidden="true"><use href="#icon-cart"></use></svg><span>购物车</span><b id="cart-count">0</b>
+        </button>
+      </div>
+    </div>
+    <nav class="category-nav" aria-label="商品分类">
+      <div class="page-shell nav-inner">
+        <a href="#all-products" data-category="all">全部商品</a>
+        <div id="category-links" class="category-links"></div>
+        <a class="nav-service" href="#service">服务保障</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="page-shell hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow light">2026 智能生活新品季</p>
+          <h1>星野智家</h1>
+          <p class="hero-lead">把聪明的家，装进每一个日常。从清洁、空气到照明和影音，让设备真正服务于生活。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#featured-products">立即选购</a>
+            <button class="button button-ghost-light" id="hero-service-button" type="button">咨询选购建议</button>
+          </div>
+          <div class="hero-proof">
+            <div><strong>30 天</strong><span>价保服务</span></div>
+            <div><strong>7 天</strong><span>无理由退换</span></div>
+            <div><strong>1 年+</strong><span>整机质保</span></div>
+          </div>
+        </div>
+        <div class="hero-product" id="hero-product"></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="服务优势">
+      <div class="page-shell trust-grid">
+        <div class="trust-item"><svg><use href="#icon-truck"></use></svg><span><strong>满 299 包邮</strong><small>全国大部分地区</small></span></div>
+        <div class="trust-item"><svg><use href="#icon-shield"></use></svg><span><strong>正品与保修</strong><small>官方售后支持</small></span></div>
+        <div class="trust-item"><svg><use href="#icon-refresh"></use></svg><span><strong>7 天无理由</strong><small>包装完好即可退换</small></span></div>
+        <div class="trust-item"><svg><use href="#icon-support"></use></svg><span><strong>智能客服</strong><small>选购与售后即时响应</small></span></div>
+      </div>
+    </section>
+
+    <section class="section category-section" id="categories">
+      <div class="page-shell">
+        <div class="section-heading">
+          <div><p class="eyebrow">按场景选购</p><h2>找到适合你的智能设备</h2></div>
+          <a class="text-link" href="#all-products">查看全部 <svg><use href="#icon-arrow"></use></svg></a>
+        </div>
+        <div class="category-grid" id="category-grid" aria-label="商品分类"></div>
+      </div>
+    </section>
+
+    <section class="section featured-section" id="featured-products">
+      <div class="page-shell">
+        <div class="featured-layout">
+          <article class="spotlight" id="spotlight-product"></article>
+          <div class="featured-products">
+            <div class="section-heading compact">
+              <div><p class="eyebrow">本周热卖</p><h2>大家都在买</h2></div>
+              <button class="text-link" type="button" data-scroll-all>浏览全部 <svg><use href="#icon-arrow"></use></svg></button>
+            </div>
+            <div class="product-grid product-grid-featured" id="featured-product-grid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products-section" id="all-products">
+      <div class="page-shell">
+        <div class="section-heading">
+          <div><p class="eyebrow">全部商品</p><h2 id="product-section-title">智能生活精选</h2></div>
+          <p class="result-count" id="result-count">正在加载商品...</p>
+        </div>
+        <div class="products-layout">
+          <aside class="filter-panel" aria-label="筛选商品">
+            <div class="filter-header"><strong>筛选</strong><button id="clear-filters" type="button" hidden>清除</button></div>
+            <fieldset class="filter-group">
+              <legend>分类</legend>
+              <div id="filter-categories" class="filter-options"></div>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend>价格</legend>
+              <div class="filter-options">
+                <label><input type="radio" name="price" value=""><span>全部价格</span></label>
+                <label><input type="radio" name="price" value="0-999"><span>999 元以下</span></label>
+                <label><input type="radio" name="price" value="1000-1999"><span>1,000 - 1,999 元</span></label>
+                <label><input type="radio" name="price" value="2000-2999"><span>2,000 - 2,999 元</span></label>
+                <label><input type="radio" name="price" value="3000-99999"><span>3,000 元以上</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend>其他</legend>
+              <div class="filter-options">
+                <label><input type="checkbox" id="filter-stock"><span>仅看有货</span></label>
+                <label><input type="checkbox" id="filter-rating"><span>评分 4.8 以上</span></label>
+              </div>
+            </fieldset>
+            <div class="filter-note"><svg><use href="#icon-sparkles"></use></svg><p>价格均为官方建议零售价，不同版本价格以商品详情为准。</p></div>
+          </aside>
+          <div class="products-main">
+            <div class="products-toolbar">
+              <button class="button button-secondary mobile-filter" id="mobile-filter-button" type="button"><svg><use href="#icon-filter"></use></svg>筛选</button>
+              <label class="sort-control">排序
+                <select id="sort-select">
+                  <option value="recommended">综合推荐</option>
+                  <option value="sales">销量优先</option>
+                  <option value="rating">评分优先</option>
+                  <option value="price-asc">价格从低到高</option>
+                  <option value="price-desc">价格从高到低</option>
+                  <option value="newest">最新上架</option>
+                </select>
+              </label>
+            </div>
+            <div class="product-grid" id="product-grid"></div>
+            <div class="empty-state" id="product-empty" hidden>
+              <svg><use href="#icon-search"></use></svg><h3>没有找到匹配商品</h3><p>试试更换关键词或清除筛选条件。</p>
+            </div>
+            <div class="pagination" id="pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section campaign-section">
+      <div class="page-shell campaign-inner">
+        <div class="campaign-copy">
+          <p class="eyebrow light">新客专享</p>
+          <h2>第一件智能家电，我们替你多想一步</h2>
+          <p>注册即领 100 元优惠券，订单满 1999 元可用；全场满 299 元包邮，30 天价保。</p>
+          <div class="coupon-row">
+            <button class="coupon" type="button" data-coupon="NEW100"><span>¥100</span><small>满 1999 可用</small></button>
+            <button class="coupon" type="button" data-coupon="STAR50"><span>¥50</span><small>满 999 可用</small></button>
+          </div>
+        </div>
+        <img src="/images/living.jpg" alt="现代家居客厅中的智能设备" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section service-section" id="service">
+      <div class="page-shell">
+        <div class="section-heading"><div><p class="eyebrow">放心购买</p><h2>从下单到安装，都有明确保障</h2></div></div>
+        <div class="service-grid">
+          <article><span>01</span><svg><use href="#icon-package"></use></svg><h3>严选与质检</h3><p>商品经过功能、包装和配件检查，关键品类提供出厂检测信息。</p></article>
+          <article><span>02</span><svg><use href="#icon-truck"></use></svg><h3>透明物流</h3><p>现货 24 小时内出库，多仓就近发货，订单页可查询物流节点。</p></article>
+          <article><span>03</span><svg><use href="#icon-tools"></use></svg><h3>安装与售后</h3><p>智能门锁等品类支持预约安装，售后工单全程可查询。</p></article>
+          <article><span>04</span><svg><use href="#icon-support"></use></svg><h3>智能客服</h3><p>选型建议、版本差异、物流和退换货问题，都可以即时咨询。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="page-shell newsletter-inner">
+        <div><p class="eyebrow">星野生活志</p><h2>订阅新品、优惠与使用指南</h2><p>每周一封，不频繁打扰，随时可退订。</p></div>
+        <form id="newsletter-form" class="newsletter-form"><label class="sr-only" for="newsletter-email">邮箱地址</label><input id="newsletter-email" type="email" placeholder="输入邮箱地址" required><button class="button button-primary" type="submit">订阅</button></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell footer-grid">
+      <div class="footer-brand"><img src="/assets/logo.svg" alt="" width="44" height="44"><div><strong>星野智家</strong><p>让科技自然融入每一个日常。</p></div></div>
+      <div><h3>选购</h3><a href="#all-products">全部商品</a><a href="#categories">按场景选购</a><a href="#all-products">新品与热销</a></div>
+      <div><h3>服务</h3><button id="footer-track-button" type="button">订单查询</button><button id="footer-chat-button" type="button">在线客服</button><a href="#service">配送与安装</a></div>
+      <div><h3>关于</h3><p>演示电商系统</p><p>客服时间：09:00 - 22:00</p><a href="/admin.html">管理后台</a></div>
+    </div>
+    <div class="footer-bottom page-shell"><p>© 2026 星野智家。本站为技术演示项目，商品与价格均为示例。</p><p>隐私政策 · 用户协议 · 售后政策</p></div>
+  </footer>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="购物车">
+    <div class="drawer-header"><div><p class="eyebrow">购物车</p><h2>已选商品 <span id="cart-drawer-count">0</span></h2></div><button class="icon-button" id="cart-close" type="button" aria-label="关闭购物车"><svg><use href="#icon-close"></use></svg></button></div>
+    <div class="cart-progress" id="cart-progress"></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><svg><use href="#icon-cart"></use></svg><h3>购物车还是空的</h3><p>从热销商品开始挑选，或者咨询客服获取建议。</p><button class="button button-primary" data-close-cart type="button">去逛逛</button></div>
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-coupon"><label for="cart-coupon-input">优惠券</label><div><input id="cart-coupon-input" placeholder="输入优惠码"><button id="apply-coupon" type="button">使用</button></div><p id="coupon-message"></p></div>
+      <div class="cart-totals"><span>商品小计 <strong id="cart-subtotal">¥0</strong></span><span>预计运费 <strong id="cart-shipping">¥0</strong></span><span id="cart-discount-row" hidden>优惠 <strong id="cart-discount">-¥0</strong></span></div>
+      <button class="button button-primary button-wide" id="checkout-button" type="button">去结算</button>
+      <p class="cart-note">结算页为演示环境，不会发起真实扣款。</p>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+
+  <dialog class="dialog product-dialog" id="product-dialog"><div id="product-dialog-content"></div></dialog>
+  <dialog class="dialog checkout-dialog" id="checkout-dialog"><div id="checkout-dialog-content"></div></dialog>
+  <dialog class="dialog tracking-dialog" id="tracking-dialog"><div id="tracking-dialog-content"></div></dialog>
+  <dialog class="dialog success-dialog" id="success-dialog"><div id="success-dialog-content"></div></dialog>
+  <dialog class="dialog member-dialog" id="member-dialog"><div id="member-dialog-content"></div></dialog>
+  <dialog class="dialog mobile-filter-dialog" id="mobile-filter-dialog"><div id="mobile-filter-content"></div></dialog>
+
+  <button class="chat-launcher" id="chat-launcher" type="button" aria-label="打开智能客服">
+    <svg><use href="#icon-message"></use></svg><span class="chat-online-dot"></span><b>小星客服</b>
+  </button>
+  <section class="chat-panel" id="chat-panel" aria-hidden="true" aria-label="星野智能客服">
+    <header><div class="chat-avatar">星</div><div><strong>小星智能客服</strong><small><i></i> 在线 · 通常秒回</small></div><button class="icon-button" id="chat-close" type="button" aria-label="关闭客服"><svg><use href="#icon-close"></use></svg></button></header>
+    <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+    <div class="chat-quick-actions" id="chat-quick-actions"></div>
+    <form class="chat-form" id="chat-form"><label class="sr-only" for="chat-input">输入咨询内容</label><textarea id="chat-input" rows="1" maxlength="500" placeholder="输入您的问题..."></textarea><button type="submit" aria-label="发送消息"><svg><use href="#icon-send"></use></svg></button></form>
+    <footer>由星野智能客服提供即时回复 · <button id="request-human" type="button">转人工</button></footer>
+  </section>
+
+  <div class="toast-region" id="toast-region" aria-live="polite"></div>
+
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="icon-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L20.5 7H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></symbol>
+    <symbol id="icon-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="m8 5 7 7-7 7"/></symbol>
+    <symbol id="icon-sparkles" viewBox="0 0 24 24"><path d="m12 3 1.4 4.1L17.5 8.5l-4.1 1.4L12 14l-1.4-4.1-4.1-1.4 4.1-1.4L12 3ZM5 14l.8 2.2L8 17l-2.2.8L5 20l-.8-2.2L2 17l2.2-.8L5 14ZM19 15l.6 1.4L21 17l-1.4.6L19 19l-.6-1.4L17 17l1.4-.6L19 15Z"/></symbol>
+    <symbol id="icon-wind" viewBox="0 0 24 24"><path d="M4 8h10a3 3 0 1 0-3-3M4 12h15a3 3 0 1 1-3 3M4 16h8"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="icon-coffee" viewBox="0 0 24 24"><path d="M5 8h11v7a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5zM16 10h2a3 3 0 0 1 0 6h-2M8 4c0 1 1 1 1 2M12 3c0 1 1 1 1 2"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m10 9 5 3-5 3z"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 7.8 7.5 9.5 4.4-1.7 7.5-4.9 7.5-9.5V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="icon-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 8a7 7 0 0 1 11.7-1L20 12M4 12l2.2 5a7 7 0 0 0 11.7-1"/></symbol>
+    <symbol id="icon-support" viewBox="0 0 24 24"><path d="M4 13v-2a8 8 0 0 1 16 0v2"/><path d="M4 12h2v7H5a2 2 0 0 1-2-2v-3a2 2 0 0 1 1-2ZM20 12h-2v7h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-1-2ZM18 19c-1 2-3 2-5 2"/></symbol>
+    <symbol id="icon-filter" viewBox="0 0 24 24"><path d="M4 5h16M7 12h10M10 19h4"/></symbol>
+    <symbol id="icon-package" viewBox="0 0 24 24"><path d="m4 7 8-4 8 4v10l-8 4-8-4zM4 7l8 4 8-4M12 11v10"/></symbol>
+    <symbol id="icon-tools" viewBox="0 0 24 24"><path d="m14 6 4-2 2 2-2 4M5 19l9-9M4 4l4 4M13 19l2-2"/></symbol>
+    <symbol id="icon-message" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></symbol>
+    <symbol id="icon-send" viewBox="0 0 24 24"><path d="m3 11 18-8-8 18-2-8zM11 13l10-10"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="icon-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+  </svg>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

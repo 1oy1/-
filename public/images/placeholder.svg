@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="商品图片暂缺">
+  <rect width="1200" height="900" fill="#eef2ef"/>
+  <circle cx="600" cy="390" r="118" fill="#dbe6df"/>
+  <path d="M540 430l54-64 47 48 31-36 68 82H510z" fill="#8aa89a"/>
+  <circle cx="565" cy="350" r="22" fill="#8aa89a"/>
+  <text x="600" y="590" text-anchor="middle" fill="#52645a" font-family="sans-serif" font-size="42">星野智家</text>
+  <text x="600" y="648" text-anchor="middle" fill="#7a8a81" font-family="sans-serif" font-size="28">商品图片暂缺</text>
+</svg>
