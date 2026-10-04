@@ -707,7 +707,7 @@ function openMember() {
 function openAdminWorkspace(pushHistory = true) {
   const workspace = $('#admin-workspace');
   const frame = $('#admin-frame');
-  if (!frame.src) frame.src = 'admin.html?embedded=1&v=20261004c';
+  if (!frame.src) frame.src = 'admin.html?embedded=1&v=20261004d';
   workspace.hidden = false;
   document.body.classList.add('no-scroll');
   if (pushHistory && new URLSearchParams(location.search).get('view') !== 'admin') {
