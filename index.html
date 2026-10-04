@@ -34,6 +34,9 @@
         <button class="header-action text-action" id="member-button" type="button">
           <svg aria-hidden="true"><use href="#icon-user"></use></svg><span>会员中心</span>
         </button>
+        <button class="header-action text-action" id="admin-entry-button" type="button">
+          <svg aria-hidden="true"><use href="#icon-settings"></use></svg><span>运营后台</span>
+        </button>
         <button class="header-action cart-action" id="cart-button" type="button">
           <svg aria-hidden="true"><use href="#icon-cart"></use></svg><span>购物车</span><b id="cart-count">0</b>
         </button>
@@ -201,7 +204,7 @@
       <div class="footer-brand"><img src="assets/logo.svg" alt="" width="44" height="44"><div><strong>星野智家</strong><p>让科技自然融入每一个日常。</p></div></div>
       <div><h3>选购</h3><a href="#all-products">全部商品</a><a href="#categories">按场景选购</a><a href="#all-products">新品与热销</a></div>
       <div><h3>服务</h3><button id="footer-track-button" type="button">订单查询</button><button id="footer-chat-button" type="button">在线客服</button><a href="#service">配送与安装</a></div>
-      <div><h3>关于</h3><p>演示电商系统</p><p>客服时间：09:00 - 22:00</p><a href="admin.html">管理后台</a></div>
+      <div><h3>关于</h3><p>演示电商系统</p><p>客服时间：09:00 - 22:00</p><button type="button" data-open-admin>管理后台</button></div>
     </div>
     <div class="footer-bottom page-shell"><p>© 2026 星野智家。本站为技术演示项目，商品与价格均为示例。</p><p>隐私政策 · 用户协议 · 售后政策</p></div>
   </footer>
@@ -219,6 +222,14 @@
     </div>
   </aside>
   <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+
+  <section class="admin-workspace" id="admin-workspace" hidden aria-label="商城运营后台">
+    <div class="admin-workspace-bar">
+      <div><span class="admin-workspace-dot"></span><strong>运营后台</strong><small>商品、订单、客服与营销可在当前页面管理</small></div>
+      <button class="admin-workspace-close" id="admin-workspace-close" type="button"><svg><use href="#icon-arrow"></use></svg>返回商城</button>
+    </div>
+    <iframe id="admin-frame" title="星野智家运营后台" loading="lazy"></iframe>
+  </section>
 
   <dialog class="dialog product-dialog" id="product-dialog"><div id="product-dialog-content"></div></dialog>
   <dialog class="dialog checkout-dialog" id="checkout-dialog"><div id="checkout-dialog-content"></div></dialog>
@@ -260,6 +271,7 @@
     <symbol id="icon-package" viewBox="0 0 24 24"><path d="m4 7 8-4 8 4v10l-8 4-8-4zM4 7l8 4 8-4M12 11v10"/></symbol>
     <symbol id="icon-tools" viewBox="0 0 24 24"><path d="m14 6 4-2 2 2-2 4M5 19l9-9M4 4l4 4M13 19l2-2"/></symbol>
     <symbol id="icon-message" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></symbol>
+    <symbol id="icon-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.6v-.2h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z"/></symbol>
     <symbol id="icon-send" viewBox="0 0 24 24"><path d="m3 11 18-8-8 18-2-8zM11 13l10-10"/></symbol>
     <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
     <symbol id="icon-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
