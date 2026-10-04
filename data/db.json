@@ -1125,6 +1125,496 @@
       "warranty": "整机 1 年，核心部件 2 年",
       "status": "active",
       "createdAt": "2026-10-04T13:46:02.268Z"
+    },
+    {
+      "id": "dehumidifier-d1",
+      "name": "星野 智能除湿机 D1",
+      "subtitle": "22L 日除湿量 · 连续排水 · 干衣模式",
+      "category": "air",
+      "badge": "智能生活新品",
+      "images": [
+        "images/air-purifier.svg",
+        "images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 520,
+      "sold": 2100,
+      "description": "星野 智能除湿机 D1适合家庭日常使用，提供不同配置版本，价格和功能层级清晰。",
+      "features": [
+        "智能联动",
+        "低噪节能",
+        "简洁安装",
+        "官方质保"
+      ],
+      "specs": {
+        "控制方式": "App / 本机",
+        "额定功率": "40W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "dehumidifier-d1-v1",
+          "name": "标准版",
+          "subtitle": "基础配置",
+          "price": 1699,
+          "originalPrice": 1999,
+          "stock": 40,
+          "sku": "DEHUMIDIFIER-D1-1"
+        },
+        {
+          "id": "dehumidifier-d1-v2",
+          "name": "地下室增强版",
+          "subtitle": "增强配置",
+          "price": 2199,
+          "originalPrice": 2599,
+          "stock": 33,
+          "sku": "DEHUMIDIFIER-D1-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T14:23:35.701Z"
+    },
+    {
+      "id": "water-w3",
+      "name": "星野 即热净水器 W3",
+      "subtitle": "RO 反渗透 · 3 秒即热 · 五档温度",
+      "category": "air",
+      "badge": "智能生活新品",
+      "images": [
+        "images/air-purifier.svg",
+        "images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 520,
+      "sold": 2100,
+      "description": "星野 即热净水器 W3适合家庭日常使用，提供不同配置版本，价格和功能层级清晰。",
+      "features": [
+        "智能联动",
+        "低噪节能",
+        "简洁安装",
+        "官方质保"
+      ],
+      "specs": {
+        "控制方式": "App / 本机",
+        "额定功率": "40W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "water-w3-v1",
+          "name": "标准版",
+          "subtitle": "基础配置",
+          "price": 1999,
+          "originalPrice": 2499,
+          "stock": 40,
+          "sku": "WATER-W3-1"
+        },
+        {
+          "id": "water-w3-v2",
+          "name": "矿物质版",
+          "subtitle": "增强配置",
+          "price": 2599,
+          "originalPrice": 3199,
+          "stock": 33,
+          "sku": "WATER-W3-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T14:23:35.701Z"
+    },
+    {
+      "id": "air-monitor-q1",
+      "name": "星野 空气质量检测仪 Q1",
+      "subtitle": "PM2.5 · 甲醛 · 温湿度实时监测",
+      "category": "air",
+      "badge": "智能生活新品",
+      "images": [
+        "images/air-purifier.svg",
+        "images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 520,
+      "sold": 2100,
+      "description": "星野 空气质量检测仪 Q1适合家庭日常使用，提供不同配置版本，价格和功能层级清晰。",
+      "features": [
+        "智能联动",
+        "低噪节能",
+        "简洁安装",
+        "官方质保"
+      ],
+      "specs": {
+        "控制方式": "App / 本机",
+        "额定功率": "40W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "air-monitor-q1-v1",
+          "name": "桌面版",
+          "subtitle": "基础配置",
+          "price": 299,
+          "originalPrice": 399,
+          "stock": 40,
+          "sku": "AIR-MONITOR-Q1-1"
+        },
+        {
+          "id": "air-monitor-q1-v2",
+          "name": "Wi-Fi 联动版",
+          "subtitle": "增强配置",
+          "price": 399,
+          "originalPrice": 499,
+          "stock": 33,
+          "sku": "AIR-MONITOR-Q1-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T14:23:35.701Z"
+    },
+    {
+      "id": "bedside-lamp-n1",
+      "name": "星野 床头阅读灯 N1",
+      "subtitle": "无频闪 · 触控调光 · 定时关灯",
+      "category": "light",
+      "badge": "智能生活新品",
+      "images": [
+        "images/lamp.jpg",
+        "images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 520,
+      "sold": 2100,
+      "description": "星野 床头阅读灯 N1适合家庭日常使用，提供不同配置版本，价格和功能层级清晰。",
+      "features": [
+        "智能联动",
+        "低噪节能",
+        "简洁安装",
+        "官方质保"
+      ],
+      "specs": {
+        "控制方式": "App / 本机",
+        "额定功率": "40W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "bedside-lamp-n1-v1",
+          "name": "标准版",
+          "subtitle": "基础配置",
+          "price": 299,
+          "originalPrice": 399,
+          "stock": 40,
+          "sku": "BEDSIDE-LAMP-N1-1"
+        },
+        {
+          "id": "bedside-lamp-n1-v2",
+          "name": "无线充电版",
+          "subtitle": "增强配置",
+          "price": 399,
+          "originalPrice": 499,
+          "stock": 33,
+          "sku": "BEDSIDE-LAMP-N1-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T14:23:35.701Z"
+    },
+    {
+      "id": "floor-washer-s3",
+      "name": "星野 蒸汽拖把 S3",
+      "subtitle": "100°C 蒸汽 · 双水箱 · 全屋除菌",
+      "category": "cleaning",
+      "badge": "智能生活新品",
+      "images": [
+        "images/robot-vacuum.svg",
+        "images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 520,
+      "sold": 2100,
+      "description": "星野 蒸汽拖把 S3适合家庭日常使用，提供不同配置版本，价格和功能层级清晰。",
+      "features": [
+        "智能联动",
+        "低噪节能",
+        "简洁安装",
+        "官方质保"
+      ],
+      "specs": {
+        "控制方式": "App / 本机",
+        "额定功率": "40W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "floor-washer-s3-v1",
+          "name": "标准版",
+          "subtitle": "基础配置",
+          "price": 899,
+          "originalPrice": 1099,
+          "stock": 40,
+          "sku": "FLOOR-WASHER-S3-1"
+        },
+        {
+          "id": "floor-washer-s3-v2",
+          "name": "电动滚刷版",
+          "subtitle": "增强配置",
+          "price": 1199,
+          "originalPrice": 1499,
+          "stock": 33,
+          "sku": "FLOOR-WASHER-S3-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T14:23:35.701Z"
+    },
+    {
+      "id": "vacuum-v2",
+      "name": "星野 无线手持吸尘器 V2",
+      "subtitle": "150AW 吸力 · 60 分钟续航 · 可拆电池",
+      "category": "cleaning",
+      "badge": "智能生活新品",
+      "images": [
+        "images/robot-vacuum.svg",
+        "images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 520,
+      "sold": 2100,
+      "description": "星野 无线手持吸尘器 V2适合家庭日常使用，提供不同配置版本，价格和功能层级清晰。",
+      "features": [
+        "智能联动",
+        "低噪节能",
+        "简洁安装",
+        "官方质保"
+      ],
+      "specs": {
+        "控制方式": "App / 本机",
+        "额定功率": "40W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "vacuum-v2-v1",
+          "name": "标准版",
+          "subtitle": "基础配置",
+          "price": 999,
+          "originalPrice": 1299,
+          "stock": 40,
+          "sku": "VACUUM-V2-1"
+        },
+        {
+          "id": "vacuum-v2-v2",
+          "name": "双电池版",
+          "subtitle": "增强配置",
+          "price": 1399,
+          "originalPrice": 1699,
+          "stock": 33,
+          "sku": "VACUUM-V2-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T14:23:35.701Z"
+    },
+    {
+      "id": "speaker-s3",
+      "name": "星野 户外便携音箱 S3",
+      "subtitle": "IP67 防水 · 80W 输出 · 24 小时续航",
+      "category": "entertainment",
+      "badge": "智能生活新品",
+      "images": [
+        "images/speaker.jpg",
+        "images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 520,
+      "sold": 2100,
+      "description": "星野 户外便携音箱 S3适合家庭日常使用，提供不同配置版本，价格和功能层级清晰。",
+      "features": [
+        "智能联动",
+        "低噪节能",
+        "简洁安装",
+        "官方质保"
+      ],
+      "specs": {
+        "控制方式": "App / 本机",
+        "额定功率": "40W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "speaker-s3-v1",
+          "name": "标准版",
+          "subtitle": "基础配置",
+          "price": 699,
+          "originalPrice": 899,
+          "stock": 40,
+          "sku": "SPEAKER-S3-1"
+        },
+        {
+          "id": "speaker-s3-v2",
+          "name": "双麦克风版",
+          "subtitle": "增强配置",
+          "price": 899,
+          "originalPrice": 1099,
+          "stock": 33,
+          "sku": "SPEAKER-S3-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T14:23:35.701Z"
+    },
+    {
+      "id": "projector-p2",
+      "name": "星野 4K 智能投影 P2",
+      "subtitle": "4K 解码 · 1500 ANSI 流明 · 激光对焦",
+      "category": "entertainment",
+      "badge": "智能生活新品",
+      "images": [
+        "images/projector.jpg",
+        "images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 520,
+      "sold": 2100,
+      "description": "星野 4K 智能投影 P2适合家庭日常使用，提供不同配置版本，价格和功能层级清晰。",
+      "features": [
+        "智能联动",
+        "低噪节能",
+        "简洁安装",
+        "官方质保"
+      ],
+      "specs": {
+        "控制方式": "App / 本机",
+        "额定功率": "40W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "projector-p2-v1",
+          "name": "标准版",
+          "subtitle": "基础配置",
+          "price": 3299,
+          "originalPrice": 3999,
+          "stock": 40,
+          "sku": "PROJECTOR-P2-1"
+        },
+        {
+          "id": "projector-p2-v2",
+          "name": "客厅旗舰版",
+          "subtitle": "增强配置",
+          "price": 3999,
+          "originalPrice": 4699,
+          "stock": 33,
+          "sku": "PROJECTOR-P2-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T14:23:35.701Z"
+    },
+    {
+      "id": "camera-c4",
+      "name": "星野 4K 全彩摄像头 C4",
+      "subtitle": "4K 画质 · 双频 Wi-Fi · AI 人形追踪",
+      "category": "security",
+      "badge": "智能生活新品",
+      "images": [
+        "images/security.jpg",
+        "images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 520,
+      "sold": 2100,
+      "description": "星野 4K 全彩摄像头 C4适合家庭日常使用，提供不同配置版本，价格和功能层级清晰。",
+      "features": [
+        "智能联动",
+        "低噪节能",
+        "简洁安装",
+        "官方质保"
+      ],
+      "specs": {
+        "控制方式": "App / 本机",
+        "额定功率": "40W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "camera-c4-v1",
+          "name": "64GB 版",
+          "subtitle": "基础配置",
+          "price": 399,
+          "originalPrice": 499,
+          "stock": 40,
+          "sku": "CAMERA-C4-1"
+        },
+        {
+          "id": "camera-c4-v2",
+          "name": "云存储版",
+          "subtitle": "增强配置",
+          "price": 599,
+          "originalPrice": 699,
+          "stock": 33,
+          "sku": "CAMERA-C4-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T14:23:35.701Z"
+    },
+    {
+      "id": "sensor-t1",
+      "name": "星野 门窗传感器 T1",
+      "subtitle": "开合检测 · 离家提醒 · 两年续航",
+      "category": "security",
+      "badge": "智能生活新品",
+      "images": [
+        "images/smart-lock.svg",
+        "images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 520,
+      "sold": 2100,
+      "description": "星野 门窗传感器 T1适合家庭日常使用，提供不同配置版本，价格和功能层级清晰。",
+      "features": [
+        "智能联动",
+        "低噪节能",
+        "简洁安装",
+        "官方质保"
+      ],
+      "specs": {
+        "控制方式": "App / 本机",
+        "额定功率": "40W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "sensor-t1-v1",
+          "name": "单只装",
+          "subtitle": "基础配置",
+          "price": 199,
+          "originalPrice": 299,
+          "stock": 40,
+          "sku": "SENSOR-T1-1"
+        },
+        {
+          "id": "sensor-t1-v2",
+          "name": "家庭三只装",
+          "subtitle": "增强配置",
+          "price": 359,
+          "originalPrice": 499,
+          "stock": 33,
+          "sku": "SENSOR-T1-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T14:23:35.701Z"
     }
   ],
   "orders": [
