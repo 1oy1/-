@@ -707,7 +707,7 @@ function openMember() {
 function openAdminWorkspace(pushHistory = true) {
   const workspace = $('#admin-workspace');
   const frame = $('#admin-frame');
-  if (!frame.src) frame.src = 'admin.html?embedded=1';
+  if (!frame.src) frame.src = 'admin.html?embedded=1&v=20261004b';
   workspace.hidden = false;
   document.body.classList.add('no-scroll');
   if (pushHistory && new URLSearchParams(location.search).get('view') !== 'admin') {
@@ -804,7 +804,7 @@ function openMobileNav() {
         <a href="#all-products" data-category="all" data-close-mobile-nav>全部商品</a>
         ${state.config.categories.map((category) => `<a href="#all-products" data-category="${escapeHtml(category.id)}" data-close-mobile-nav>${escapeHtml(category.name)}</a>`).join('')}
         <a href="#service" data-close-mobile-nav>服务保障</a>
-        <button type="button" data-open-admin data-close-mobile-nav>运营后台</button>
+        <a href="admin.html?embedded=1" data-open-admin data-close-mobile-nav>运营后台</a>
       </nav>
     </aside>`;
   document.body.append(element);
@@ -877,7 +877,10 @@ function bindEvents() {
   });
 
   $('#cart-button').addEventListener('click', openCart);
-  $('#admin-entry-button').addEventListener('click', () => openAdminWorkspace());
+  $('#admin-entry-button').addEventListener('click', (event) => {
+    event.preventDefault();
+    openAdminWorkspace();
+  });
   $('#admin-workspace-close').addEventListener('click', () => closeAdminWorkspace());
   $('#cart-close').addEventListener('click', closeCart);
   $('#drawer-backdrop').addEventListener('click', closeCart);
