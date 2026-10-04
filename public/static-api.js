@@ -75,7 +75,7 @@ async function loadDatabase() {
     memoryDatabase = JSON.parse(saved);
     return memoryDatabase;
   }
-  const response = await fetch(new URL('./data/db.json', import.meta.url));
+  const response = await fetch(new URL('./data/catalog-v2.json', import.meta.url));
   if (!response.ok) throw new Error('在线演示数据加载失败，请刷新页面重试');
   memoryDatabase = await response.json();
   persistDatabase();

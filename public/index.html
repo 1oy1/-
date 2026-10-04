@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#1f6f54">
   <title>星野智家 · 智能生活官方商城</title>
   <link rel="icon" href="assets/logo.svg">
-  <link rel="stylesheet" href="styles.css?v=20261004b">
+  <link rel="stylesheet" href="styles.css?v=20261004c">
 </head>
 <body>
   <a class="skip-link" href="#main-content">跳到主要内容</a>
@@ -34,7 +34,7 @@
         <button class="header-action text-action" id="member-button" type="button">
           <svg aria-hidden="true"><use href="#icon-user"></use></svg><span>会员中心</span>
         </button>
-        <a class="header-action text-action" id="admin-entry-button" href="admin.html?embedded=1&v=20261004b">
+        <a class="header-action admin-action" id="admin-entry-button" href="admin.html?embedded=1&v=20261004c">
           <svg aria-hidden="true"><use href="#icon-settings"></use></svg><span>运营后台</span>
         </a>
         <button class="header-action cart-action" id="cart-button" type="button">
@@ -226,7 +226,7 @@
   <section class="admin-workspace" id="admin-workspace" hidden aria-label="商城运营后台">
     <div class="admin-workspace-bar">
       <div><span class="admin-workspace-dot"></span><strong>运营后台</strong><small>商品、订单、客服与营销可在当前页面管理</small></div>
-      <button class="admin-workspace-close" id="admin-workspace-close" type="button"><svg><use href="#icon-arrow"></use></svg>返回商城</button>
+      <div class="admin-workspace-actions"><a href="admin.html?v=20261004c" target="_top">直接打开后台</a><button class="admin-workspace-close" id="admin-workspace-close" type="button"><svg><use href="#icon-arrow"></use></svg>返回商城</button></div>
     </div>
     <iframe id="admin-frame" title="星野智家运营后台" loading="lazy"></iframe>
   </section>
@@ -278,6 +278,6 @@
     <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
     <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
   </svg>
-  <script type="module" src="app.js?v=20261004b"></script>
+  <script type="module" src="app.js?v=20261004c"></script>
 </body>
 </html>

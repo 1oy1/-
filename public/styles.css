@@ -1384,6 +1384,18 @@ svg {
   font-size: 12px;
 }
 
+.admin-workspace-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.admin-workspace-actions > a {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
 .admin-workspace-close svg {
   width: 15px;
   height: 15px;
