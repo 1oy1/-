@@ -439,7 +439,7 @@ svg {
 }
 
 .hero-media {
-  background: url("/images/hero.jpg") center / cover no-repeat;
+  background: url("images/hero.jpg") center / cover no-repeat;
   transform: scale(1.02);
 }
 

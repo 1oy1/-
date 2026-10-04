@@ -24,6 +24,12 @@ npm start
 
 浏览器访问 `http://localhost:3000`。后台地址为 `http://localhost:3000/admin.html`。
 
+## 在线演示
+
+GitHub Pages 部署地址：https://1oy1.github.io/-/
+
+在线版使用浏览器本地存储模拟后端数据，前台购物车、结算、订单查询、虚拟客服和后台管理均可直接体验。每个浏览器拥有独立的演示数据，不会影响其他访客。
+
 默认后台演示账号：
 
 - 用户名：`admin`

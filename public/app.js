@@ -1,5 +1,6 @@
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+import { api } from './api-adapter.js';
 
 const state = {
   config: null,
@@ -58,7 +59,7 @@ function money(value) {
 }
 
 function imagePath(value) {
-  return value && String(value).startsWith('/') ? value : '/images/placeholder.svg';
+  return value ? String(value).replace(/^\/images\//, 'images/').replace(/^\/assets\//, 'assets/') : 'images/placeholder.svg';
 }
 
 function categoryName(id) {
@@ -74,16 +75,6 @@ function productOriginalPrice(product) {
   return Number(selected.originalPrice || selected.price);
 }
 
-async function api(url, options = {}) {
-  const response = await fetch(url, {
-    credentials: 'same-origin',
-    headers: { 'Content-Type': 'application/json', ...(options.headers || {}) },
-    ...options
-  });
-  const payload = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(payload.error || `请求失败（${response.status}）`);
-  return payload;
-}
 
 function toast(message, type = '') {
   const region = $('#toast-region');
@@ -384,7 +375,7 @@ function addToCart(product, variantId, qty = 1) {
       name: product.name,
       variantName: variant.name,
       price: Number(variant.price),
-      image: product.images?.[0] || '/images/placeholder.svg',
+      image: product.images?.[0] || 'images/placeholder.svg',
       stock: Number(variant.stock),
       qty
     });
@@ -850,7 +841,7 @@ function bindEvents() {
     const image = event.target;
     if (!(image instanceof HTMLImageElement)) return;
     if (image.src.endsWith('/images/placeholder.svg')) return;
-    image.src = '/images/placeholder.svg';
+    image.src = 'images/placeholder.svg';
   }, true);
 
   $('#header-search').addEventListener('submit', (event) => {

@@ -1,5 +1,6 @@
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+import { api } from './api-adapter.js';
 
 const state = {
   user: null,
@@ -52,7 +53,7 @@ function formatTime(value, withDate = true) {
 }
 
 function imagePath(value) {
-  return value && String(value).startsWith('/') ? value : '/images/placeholder.svg';
+  return value ? String(value).replace(/^\/images\//, 'images/').replace(/^\/assets\//, 'assets/') : 'images/placeholder.svg';
 }
 
 function toast(message, type = '') {
@@ -63,20 +64,6 @@ function toast(message, type = '') {
   setTimeout(() => element.remove(), 2800);
 }
 
-async function api(url, options = {}) {
-  const response = await fetch(url, {
-    credentials: 'same-origin',
-    headers: { 'Content-Type': 'application/json', ...(options.headers || {}) },
-    ...options
-  });
-  const payload = await response.json().catch(() => ({}));
-  if (!response.ok) {
-    const error = new Error(payload.error || `请求失败（${response.status}）`);
-    error.status = response.status;
-    throw error;
-  }
-  return payload;
-}
 
 function closeDialog() {
   const dialog = $('#admin-dialog');
@@ -605,7 +592,7 @@ function bindEvents() {
   document.addEventListener('error', (event) => {
     const image = event.target;
     if (!(image instanceof HTMLImageElement) || image.src.endsWith('/images/placeholder.svg')) return;
-    image.src = '/images/placeholder.svg';
+    image.src = 'images/placeholder.svg';
   }, true);
 
   $('#login-form').addEventListener('submit', async (event) => {

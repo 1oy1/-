@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node server.mjs",
     "dev": "node --watch server.mjs",
-    "check": "node --check server.mjs && node --check public/app.js && node --check public/admin.js && node --check lib/store.mjs && node --check lib/support.mjs",
+    "check": "node --check server.mjs && node --check public/app.js && node --check public/admin.js && node --check public/api-adapter.js && node --check public/static-api.js && node --check lib/store.mjs && node --check lib/support.mjs",
     "test": "node --test --test-isolation=none test/*.test.mjs"
   },
   "engines": {
