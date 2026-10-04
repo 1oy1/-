@@ -704,6 +704,30 @@ function openMember() {
   $('#member-dialog').showModal();
 }
 
+function openAdminWorkspace(pushHistory = true) {
+  const workspace = $('#admin-workspace');
+  const frame = $('#admin-frame');
+  if (!frame.src) frame.src = 'admin.html?embedded=1';
+  workspace.hidden = false;
+  document.body.classList.add('no-scroll');
+  if (pushHistory && new URLSearchParams(location.search).get('view') !== 'admin') {
+    history.pushState({ view: 'admin' }, '', '?view=admin');
+  }
+}
+
+function closeAdminWorkspace(pushHistory = true) {
+  $('#admin-workspace').hidden = true;
+  document.body.classList.remove('no-scroll');
+  if (pushHistory && new URLSearchParams(location.search).get('view') === 'admin') {
+    history.pushState({ view: 'store' }, '', location.pathname);
+  }
+}
+
+function syncAdminWorkspaceFromUrl() {
+  if (new URLSearchParams(location.search).get('view') === 'admin') openAdminWorkspace(false);
+  else closeAdminWorkspace(false);
+}
+
 function ensureChatWelcome() {
   if (state.chatMessages.length) return;
   state.chatMessages.push({
@@ -780,6 +804,7 @@ function openMobileNav() {
         <a href="#all-products" data-category="all" data-close-mobile-nav>全部商品</a>
         ${state.config.categories.map((category) => `<a href="#all-products" data-category="${escapeHtml(category.id)}" data-close-mobile-nav>${escapeHtml(category.name)}</a>`).join('')}
         <a href="#service" data-close-mobile-nav>服务保障</a>
+        <button type="button" data-open-admin data-close-mobile-nav>运营后台</button>
       </nav>
     </aside>`;
   document.body.append(element);
@@ -852,6 +877,8 @@ function bindEvents() {
   });
 
   $('#cart-button').addEventListener('click', openCart);
+  $('#admin-entry-button').addEventListener('click', () => openAdminWorkspace());
+  $('#admin-workspace-close').addEventListener('click', () => closeAdminWorkspace());
   $('#cart-close').addEventListener('click', closeCart);
   $('#drawer-backdrop').addEventListener('click', closeCart);
   $('#checkout-button').addEventListener('click', openCheckout);
@@ -861,6 +888,13 @@ function bindEvents() {
   });
 
   document.addEventListener('click', async (event) => {
+    const adminEntry = event.target.closest('[data-open-admin]');
+    if (adminEntry) {
+      event.preventDefault();
+      closeMobileNav();
+      openAdminWorkspace();
+      return;
+    }
     const openButton = event.target.closest('[data-open-product]');
     if (openButton) {
       await openProduct(openButton.dataset.openProduct);
@@ -1114,6 +1148,11 @@ function bindEvents() {
     toast('订阅成功，新品与优惠将发送至您的邮箱', 'success');
     event.target.reset();
   });
+
+  window.addEventListener('popstate', syncAdminWorkspaceFromUrl);
+  window.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !$('#admin-workspace').hidden) closeAdminWorkspace();
+  });
 }
 
 async function init() {
@@ -1131,6 +1170,7 @@ async function init() {
     renderCart();
     bindEvents();
     await loadProducts();
+    syncAdminWorkspaceFromUrl();
   } catch (error) {
     document.body.innerHTML = `<main class="page-shell" style="padding:80px 0"><h1>页面加载失败</h1><p>${escapeHtml(error.message)}</p><p>请确认 Node.js 服务已启动。</p></main>`;
   }
