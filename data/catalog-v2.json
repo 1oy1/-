@@ -1,0 +1,1385 @@
+{
+  "settings": {
+    "storeName": "星野智家",
+    "slogan": "让科技自然融入每一个日常",
+    "announcement": "新客立减 100 元 · 满 299 元全国包邮 · 7 天无理由退换",
+    "freeShippingThreshold": 299,
+    "supportHours": "每天 09:00 - 22:00",
+    "supportWelcome": "您好，我是星野智能客服小星。您可以直接问我商品推荐、版本差异、物流、退换货或保修问题。",
+    "logisticsNote": "现货商品通常在付款后 24 小时内出库，偏远地区预计增加 2-4 天。",
+    "returnPolicy": "签收后 7 天内商品及包装保持完好可申请无理由退换；质量问题由平台承担往返运费。",
+    "coupons": [
+      {
+        "code": "NEW100",
+        "title": "新客立减 100 元",
+        "type": "fixed",
+        "value": 100,
+        "minSpend": 1999,
+        "description": "订单满 1999 元可用",
+        "active": true
+      },
+      {
+        "code": "STAR50",
+        "title": "星野会员券",
+        "type": "fixed",
+        "value": 50,
+        "minSpend": 999,
+        "description": "订单满 999 元可用",
+        "active": true
+      },
+      {
+        "code": "FREESHIP",
+        "title": "免运费券",
+        "type": "shipping",
+        "value": 0,
+        "minSpend": 0,
+        "description": "任意订单免基础运费",
+        "active": true
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": "cleaning",
+      "name": "智能清洁",
+      "description": "扫拖、洗地、自清洁",
+      "icon": "sparkles"
+    },
+    {
+      "id": "air",
+      "name": "空气管理",
+      "description": "净化、加湿、除甲醛",
+      "icon": "wind"
+    },
+    {
+      "id": "light",
+      "name": "智能照明",
+      "description": "护眼台灯、氛围灯",
+      "icon": "sun"
+    },
+    {
+      "id": "coffee",
+      "name": "咖啡电器",
+      "description": "半自动与全自动",
+      "icon": "coffee"
+    },
+    {
+      "id": "entertainment",
+      "name": "影音娱乐",
+      "description": "投影、音箱、穿戴",
+      "icon": "play"
+    },
+    {
+      "id": "security",
+      "name": "家庭安全",
+      "description": "智能门锁、摄像头",
+      "icon": "shield"
+    }
+  ],
+  "products": [
+    {
+      "id": "r1-pro",
+      "name": "星野 扫拖机器人 R1 Pro",
+      "subtitle": "5500Pa 吸力 · 热水洗拖布 · 自动集尘",
+      "category": "cleaning",
+      "badge": "热销 TOP 1",
+      "images": [
+        "images/robot-vacuum.svg",
+        "/images/living.jpg",
+        "/images/hero.jpg"
+      ],
+      "rating": 4.9,
+      "reviews": 3268,
+      "sold": 12840,
+      "description": "面向硬地板和地毯混合家庭的扫拖一体机器人。标准版支持激光导航、地毯识别和区域清洁；基站版进一步提供自动集尘、热水洗拖布和热风烘干。",
+      "features": [
+        "55°C 热水洗拖布",
+        "双胶刷防缠绕",
+        "LDS 激光避障",
+        "支持 App 与语音控制"
+      ],
+      "specs": {
+        "吸力": "5500Pa",
+        "电池": "5200mAh",
+        "续航": "约 180 分钟",
+        "导航": "LDS 激光导航",
+        "噪音": "56-64dB"
+      },
+      "variants": [
+        {
+          "id": "r1-standard",
+          "name": "标准版",
+          "subtitle": "水箱自清洁",
+          "price": 1899,
+          "originalPrice": 2299,
+          "stock": 86,
+          "sku": "XY-R1-STD"
+        },
+        {
+          "id": "r1-dock",
+          "name": "自动集尘版",
+          "subtitle": "60 天免倒尘",
+          "price": 2199,
+          "originalPrice": 2699,
+          "stock": 54,
+          "sku": "XY-R1-DOCK"
+        },
+        {
+          "id": "r1-max",
+          "name": "全能基站版",
+          "subtitle": "洗拖烘集尘一体",
+          "price": 2699,
+          "originalPrice": 3199,
+          "stock": 31,
+          "sku": "XY-R1-MAX"
+        }
+      ],
+      "warranty": "整机 1 年，核心电机 2 年",
+      "status": "active",
+      "createdAt": "2026-08-18T08:00:00.000Z"
+    },
+    {
+      "id": "w2",
+      "name": "星野 智能洗地机 W2",
+      "subtitle": "贴边清洁 · 高温自清洁 · 电解水除菌",
+      "category": "cleaning",
+      "badge": "新品",
+      "images": [
+        "images/robot-vacuum.svg",
+        "/images/living.jpg"
+      ],
+      "rating": 4.8,
+      "reviews": 1826,
+      "sold": 7302,
+      "description": "干湿垃圾同步处理，适合厨房、餐厅和有宠家庭。机身可平躺进入家具底部，实时光照显尘让细小颗粒更容易被发现。",
+      "features": [
+        "16000Pa 吸入功率",
+        "双贴边滚刷",
+        "55°C 热风烘干",
+        "自动牵引"
+      ],
+      "specs": {
+        "吸入功率": "16000Pa",
+        "清水箱": "0.8L",
+        "污水箱": "0.72L",
+        "续航": "约 42 分钟",
+        "重量": "4.8kg"
+      },
+      "variants": [
+        {
+          "id": "w2-basic",
+          "name": "基础版",
+          "subtitle": "热风自清洁",
+          "price": 1499,
+          "originalPrice": 1899,
+          "stock": 73,
+          "sku": "XY-W2-BASIC"
+        },
+        {
+          "id": "w2-sterile",
+          "name": "高温除菌版",
+          "subtitle": "100°C 沸水自洁",
+          "price": 1799,
+          "originalPrice": 2199,
+          "stock": 42,
+          "sku": "XY-W2-STERILE"
+        },
+        {
+          "id": "w2-station",
+          "name": "全能基站版",
+          "subtitle": "自动上下水",
+          "price": 2199,
+          "originalPrice": 2699,
+          "stock": 18,
+          "sku": "XY-W2-STATION"
+        }
+      ],
+      "warranty": "整机 1 年，滚刷电机 2 年",
+      "status": "active",
+      "createdAt": "2026-09-06T08:00:00.000Z"
+    },
+    {
+      "id": "a3",
+      "name": "星野 空气净化器 A3",
+      "subtitle": "除醛抗敏 · 数显空气质量 · 静音睡眠",
+      "category": "air",
+      "badge": "母婴推荐",
+      "images": [
+        "images/air-purifier.svg",
+        "/images/hero.jpg"
+      ],
+      "rating": 4.8,
+      "reviews": 2157,
+      "sold": 9651,
+      "description": "三层复合滤芯覆盖颗粒物、甲醛和常见异味。自动模式会根据 PM2.5 数值调节风量，睡眠档运行噪音低至 22dB。",
+      "features": [
+        "CADR 400m³/h",
+        "H13 HEPA 滤网",
+        "空气质量数显",
+        "滤芯寿命提醒"
+      ],
+      "specs": {
+        "适用面积": "28-48m²",
+        "颗粒物 CADR": "400m³/h",
+        "甲醛 CADR": "200m³/h",
+        "噪音": "22-62dB",
+        "额定功率": "45W"
+      },
+      "variants": [
+        {
+          "id": "a3-standard",
+          "name": "标准版",
+          "subtitle": "复合滤芯",
+          "price": 899,
+          "originalPrice": 1099,
+          "stock": 124,
+          "sku": "XY-A3-STD"
+        },
+        {
+          "id": "a3-formaldehyde",
+          "name": "除醛增强版",
+          "subtitle": "高碘值活性炭",
+          "price": 1199,
+          "originalPrice": 1499,
+          "stock": 68,
+          "sku": "XY-A3-FORMALDEHYDE"
+        },
+        {
+          "id": "a3-wholehome",
+          "name": "全屋循环版",
+          "subtitle": "双风道大风量",
+          "price": 1599,
+          "originalPrice": 1899,
+          "stock": 27,
+          "sku": "XY-A3-WHOLEHOME"
+        }
+      ],
+      "warranty": "整机 1 年，电机 2 年",
+      "status": "active",
+      "createdAt": "2026-07-22T08:00:00.000Z"
+    },
+    {
+      "id": "h1",
+      "name": "星野 加湿净化一体机 H1",
+      "subtitle": "无雾冷蒸发 · 恒湿控制 · 上加水",
+      "category": "air",
+      "badge": "",
+      "images": [
+        "images/humidifier.svg",
+        "/images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 936,
+      "sold": 4180,
+      "description": "无白粉冷蒸发加湿，适合卧室和儿童房。净化滤网可拦截毛絮与粉尘，恒湿模式在 40%-60% 湿度区间自动调节。",
+      "features": [
+        "冷蒸发无白雾",
+        "5L 上加水水箱",
+        "恒湿控制",
+        "滤芯可水洗"
+      ],
+      "specs": {
+        "加湿量": "600mL/h",
+        "水箱容量": "5L",
+        "适用面积": "20-40m²",
+        "噪音": "24-50dB",
+        "定时": "1-12 小时"
+      },
+      "variants": [
+        {
+          "id": "h1-standard",
+          "name": "标准版",
+          "subtitle": "基础恒湿",
+          "price": 799,
+          "originalPrice": 999,
+          "stock": 92,
+          "sku": "XY-H1-STD"
+        },
+        {
+          "id": "h1-purify",
+          "name": "净化一体版",
+          "subtitle": "HEPA 复合滤芯",
+          "price": 999,
+          "originalPrice": 1299,
+          "stock": 45,
+          "sku": "XY-H1-PURIFY"
+        }
+      ],
+      "warranty": "整机 1 年",
+      "status": "active",
+      "createdAt": "2026-08-02T08:00:00.000Z"
+    },
+    {
+      "id": "l2",
+      "name": "星野 智能护眼台灯 L2",
+      "subtitle": "全光谱 · 环境光感应 · 自动调光",
+      "category": "light",
+      "badge": "学生优选",
+      "images": [
+        "/images/lamp.jpg",
+        "/images/lamp-room.jpg"
+      ],
+      "rating": 4.9,
+      "reviews": 4612,
+      "sold": 18360,
+      "description": "高显色全光谱灯珠减少频闪和蓝光危害，环境光传感器根据桌面亮度自动补偿。支持阅读、网课、手工三种预设模式。",
+      "features": [
+        "Ra95 高显色",
+        "无可视频闪",
+        "定时休息提醒",
+        "触控与 App 调光"
+      ],
+      "specs": {
+        "显色指数": "Ra95",
+        "色温": "3000-5500K",
+        "照度": "国 AA 级",
+        "功率": "15W",
+        "材质": "铝合金 + ABS"
+      },
+      "variants": [
+        {
+          "id": "l2-standard",
+          "name": "标准版",
+          "subtitle": "手动调光",
+          "price": 399,
+          "originalPrice": 499,
+          "stock": 210,
+          "sku": "XY-L2-STD"
+        },
+        {
+          "id": "l2-auto",
+          "name": "自动感光版",
+          "subtitle": "环境光自动补偿",
+          "price": 499,
+          "originalPrice": 599,
+          "stock": 115,
+          "sku": "XY-L2-AUTO"
+        }
+      ],
+      "warranty": "整机 2 年",
+      "status": "active",
+      "createdAt": "2026-06-11T08:00:00.000Z"
+    },
+    {
+      "id": "f1",
+      "name": "星野 全光谱落地灯 F1",
+      "subtitle": "上下发光 · 客厅阅读 · 氛围照明",
+      "category": "light",
+      "badge": "设计师款",
+      "images": [
+        "/images/floor-lamp.jpg",
+        "/images/lamp-room.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 728,
+      "sold": 2910,
+      "description": "间接环境光与定向阅读光组合，适合客厅沙发阅读角。灯头可旋转，支持色温和亮度无级调节。",
+      "features": [
+        "上下双面发光",
+        "Ra96 高显色",
+        "无级调光调色",
+        "遥控与语音控制"
+      ],
+      "specs": {
+        "总光通量": "4500lm",
+        "色温": "2700-6500K",
+        "功率": "60W",
+        "高度": "150cm",
+        "灯体": "铝合金"
+      },
+      "variants": [
+        {
+          "id": "f1-standard",
+          "name": "标准版",
+          "subtitle": "遥控控制",
+          "price": 699,
+          "originalPrice": 899,
+          "stock": 61,
+          "sku": "XY-F1-STD"
+        },
+        {
+          "id": "f1-smart",
+          "name": "智能联动版",
+          "subtitle": "支持米家 / Matter",
+          "price": 899,
+          "originalPrice": 1099,
+          "stock": 38,
+          "sku": "XY-F1-SMART"
+        }
+      ],
+      "warranty": "整机 2 年",
+      "status": "active",
+      "createdAt": "2026-07-03T08:00:00.000Z"
+    },
+    {
+      "id": "c1",
+      "name": "星野 半自动咖啡机 C1",
+      "subtitle": "20Bar 萃取 · 蒸汽奶泡 · 家用入门",
+      "category": "coffee",
+      "badge": "口碑好物",
+      "images": [
+        "/images/coffee.jpg",
+        "/images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 1530,
+      "sold": 6820,
+      "description": "适合第一次接触意式咖啡的家庭用户。20Bar 泵压配合预浸泡功能提升萃取稳定性，独立蒸汽棒可制作奶咖。",
+      "features": [
+        "20Bar 意式泵压",
+        "低压预浸泡",
+        "不锈钢蒸汽棒",
+        "可拆卸水箱"
+      ],
+      "specs": {
+        "泵压": "20Bar",
+        "水箱": "1.5L",
+        "粉碗": "51mm",
+        "功率": "1100W",
+        "尺寸": "28 × 30 × 32cm"
+      },
+      "variants": [
+        {
+          "id": "c1-standard",
+          "name": "标准版",
+          "subtitle": "单加热系统",
+          "price": 1299,
+          "originalPrice": 1599,
+          "stock": 49,
+          "sku": "XY-C1-STD"
+        },
+        {
+          "id": "c1-pro",
+          "name": "研磨一体版",
+          "subtitle": "内置锥形磨豆机",
+          "price": 1699,
+          "originalPrice": 1999,
+          "stock": 24,
+          "sku": "XY-C1-PRO"
+        }
+      ],
+      "warranty": "整机 1 年，锅炉 2 年",
+      "status": "active",
+      "createdAt": "2026-05-28T08:00:00.000Z"
+    },
+    {
+      "id": "c2",
+      "name": "星野 全自动咖啡机 C2",
+      "subtitle": "一键现磨 · 自动奶泡 · 自清洗",
+      "category": "coffee",
+      "badge": "",
+      "images": [
+        "/images/coffee.jpg",
+        "/images/lamp-room.jpg"
+      ],
+      "rating": 4.8,
+      "reviews": 654,
+      "sold": 2367,
+      "description": "一键完成研磨、萃取和奶泡，适合办公室与多口之家。中文触控屏提供浓缩、美式、拿铁和卡布奇诺预设。",
+      "features": [
+        "15Bar 稳定萃取",
+        "陶瓷研磨器",
+        "自动奶泡系统",
+        "开关机自动清洗"
+      ],
+      "specs": {
+        "泵压": "15Bar",
+        "豆仓": "250g",
+        "水箱": "1.8L",
+        "研磨档位": "13 档",
+        "功率": "1450W"
+      },
+      "variants": [
+        {
+          "id": "c2-standard",
+          "name": "标准版",
+          "subtitle": "手动奶泡管",
+          "price": 2999,
+          "originalPrice": 3599,
+          "stock": 28,
+          "sku": "XY-C2-STD"
+        },
+        {
+          "id": "c2-latte",
+          "name": "自动奶咖版",
+          "subtitle": "一键拿铁 / 卡布奇诺",
+          "price": 3599,
+          "originalPrice": 4199,
+          "stock": 14,
+          "sku": "XY-C2-LATTE"
+        }
+      ],
+      "warranty": "整机 2 年，核心水路 3 年",
+      "status": "active",
+      "createdAt": "2026-08-25T08:00:00.000Z"
+    },
+    {
+      "id": "p1",
+      "name": "星野 便携投影仪 P1",
+      "subtitle": "1080P 原生分辨率 · 自动对焦 · 梯形校正",
+      "category": "entertainment",
+      "badge": "影音新品",
+      "images": [
+        "/images/projector.jpg",
+        "/images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 856,
+      "sold": 3270,
+      "description": "卧室、客厅和露营场景都可使用。自动对焦、自动梯形校正和幕布自适应降低摆放门槛，支持手机投屏与 HDMI 输入。",
+      "features": [
+        "1080P 原生分辨率",
+        "700 ANSI 流明",
+        "自动对焦与校正",
+        "双 8W 音箱"
+      ],
+      "specs": {
+        "分辨率": "1920 × 1080",
+        "亮度": "700 ANSI 流明",
+        "投射比": "1.2:1",
+        "系统": "Android 智能系统",
+        "噪音": "<28dB"
+      },
+      "variants": [
+        {
+          "id": "p1-standard",
+          "name": "标准版",
+          "subtitle": "700 ANSI 流明",
+          "price": 1899,
+          "originalPrice": 2299,
+          "stock": 44,
+          "sku": "XY-P1-STD"
+        },
+        {
+          "id": "p1-bright",
+          "name": "高亮版",
+          "subtitle": "1200 ANSI 流明",
+          "price": 2399,
+          "originalPrice": 2899,
+          "stock": 21,
+          "sku": "XY-P1-BRIGHT"
+        }
+      ],
+      "warranty": "整机 1 年，光源 2 年",
+      "status": "active",
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "s2",
+      "name": "星野 桌面无线音箱 S2",
+      "subtitle": "60W 立体声 · 低延迟 · 多房间串联",
+      "category": "entertainment",
+      "badge": "",
+      "images": [
+        "/images/speaker.jpg",
+        "/images/living.jpg"
+      ],
+      "rating": 4.8,
+      "reviews": 1284,
+      "sold": 5930,
+      "description": "紧凑箱体中配置双全频单元和被动低音单元，适合桌面、书架和床头。支持 Wi-Fi 与蓝牙双连接，多台可组成立体声。",
+      "features": [
+        "60W 峰值功率",
+        "Wi-Fi / 蓝牙 5.3",
+        "多房间串联",
+        "3.5mm 与光纤输入"
+      ],
+      "specs": {
+        "输出功率": "2 × 30W",
+        "频响": "45Hz-20kHz",
+        "连接": "Wi-Fi、蓝牙、AUX、光纤",
+        "尺寸": "18 × 12 × 14cm"
+      },
+      "variants": [
+        {
+          "id": "s2-single",
+          "name": "单只装",
+          "subtitle": "单声道桌面音箱",
+          "price": 499,
+          "originalPrice": 599,
+          "stock": 118,
+          "sku": "XY-S2-SINGLE"
+        },
+        {
+          "id": "s2-stereo",
+          "name": "立体声套装",
+          "subtitle": "两只组网",
+          "price": 899,
+          "originalPrice": 1099,
+          "stock": 52,
+          "sku": "XY-S2-STEREO"
+        }
+      ],
+      "warranty": "整机 2 年",
+      "status": "active",
+      "createdAt": "2026-06-19T08:00:00.000Z"
+    },
+    {
+      "id": "d3",
+      "name": "星野 3D 人脸智能门锁 D3",
+      "subtitle": "3D 结构光 · 指纹 · 密码 · 临时密钥",
+      "category": "security",
+      "badge": "",
+      "images": [
+        "images/smart-lock.svg",
+        "/images/hero.jpg"
+      ],
+      "rating": 4.8,
+      "reviews": 1942,
+      "sold": 7025,
+      "description": "支持 3D 人脸、半导体指纹、密码、NFC 卡和临时密钥多种开锁方式。异常逗留可推送提醒，并可联动智能门铃。",
+      "features": [
+        "3D 结构光人脸识别",
+        "C 级直插锁芯",
+        "8 个月续航",
+        "免费上门安装"
+      ],
+      "specs": {
+        "识别方式": "人脸 / 指纹 / 密码 / NFC / 钥匙",
+        "锁芯": "C 级",
+        "电池": "6250mAh",
+        "门厚": "40-120mm",
+        "联网": "Wi-Fi"
+      },
+      "variants": [
+        {
+          "id": "d3-standard",
+          "name": "标准版",
+          "subtitle": "不含猫眼屏",
+          "price": 999,
+          "originalPrice": 1299,
+          "stock": 67,
+          "sku": "XY-D3-STD"
+        },
+        {
+          "id": "d3-screen",
+          "name": "可视猫眼版",
+          "subtitle": "室内高清屏",
+          "price": 1399,
+          "originalPrice": 1699,
+          "stock": 39,
+          "sku": "XY-D3-SCREEN"
+        },
+        {
+          "id": "d3-pro",
+          "name": "全自动旗舰版",
+          "subtitle": "推拉式全自动锁体",
+          "price": 1699,
+          "originalPrice": 2099,
+          "stock": 16,
+          "sku": "XY-D3-PRO"
+        }
+      ],
+      "warranty": "整机 3 年，免费上门保修",
+      "status": "active",
+      "createdAt": "2026-04-16T08:00:00.000Z"
+    },
+    {
+      "id": "cam2",
+      "name": "星野 2K 智能摄像头 Cam 2",
+      "subtitle": "360° 云台 · AI 人形追踪 · 双向通话",
+      "category": "security",
+      "badge": "居家守护",
+      "images": [
+        "/images/security.jpg",
+        "/images/living.jpg"
+      ],
+      "rating": 4.7,
+      "reviews": 2760,
+      "sold": 10580,
+      "description": "2K 超清画面和全彩夜视，AI 算法可区分人形与普通移动。支持本地存储卡、云存储和隐私遮蔽模式。",
+      "features": [
+        "2K 超清画质",
+        "360° 水平云台",
+        "AI 人形追踪",
+        "本地 / 云双存储"
+      ],
+      "specs": {
+        "分辨率": "2304 × 1296",
+        "夜视": "全彩夜视",
+        "视角": "360° 水平 / 110° 垂直",
+        "存储": "TF 卡 / 云存储",
+        "联网": "2.4G Wi-Fi"
+      },
+      "variants": [
+        {
+          "id": "cam2-64",
+          "name": "64GB 套装",
+          "subtitle": "本地存储约 7 天",
+          "price": 299,
+          "originalPrice": 369,
+          "stock": 184,
+          "sku": "XY-CAM2-64"
+        },
+        {
+          "id": "cam2-128",
+          "name": "128GB 套装",
+          "subtitle": "本地存储约 15 天",
+          "price": 359,
+          "originalPrice": 429,
+          "stock": 121,
+          "sku": "XY-CAM2-128"
+        },
+        {
+          "id": "cam2-cloud",
+          "name": "云存储套餐版",
+          "subtitle": "含 12 个月云服务",
+          "price": 499,
+          "originalPrice": 599,
+          "stock": 58,
+          "sku": "XY-CAM2-CLOUD"
+        }
+      ],
+      "warranty": "整机 2 年",
+      "status": "active",
+      "createdAt": "2026-07-15T08:00:00.000Z"
+    },
+    {
+      "id": "vacuum-v1",
+      "name": "星野 轻量无线吸尘器 V1",
+      "subtitle": "1.8kg 轻量 · 130AW 吸力 · 除螨刷",
+      "category": "cleaning",
+      "badge": "智能生活新品",
+      "images": [
+        "images/robot-vacuum.svg",
+        "images/living.jpg"
+      ],
+      "rating": 4.8,
+      "reviews": 680,
+      "sold": 3200,
+      "description": "星野 轻量无线吸尘器 V1面向家庭日常场景设计，提供不同配置版本，兼顾性能、维护便利性和价格。",
+      "features": [
+        "App 智能控制",
+        "低噪运行",
+        "节能模式",
+        "一年以上整机质保"
+      ],
+      "specs": {
+        "控制方式": "App / 按键",
+        "额定功率": "45W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "vacuum-v1-v1",
+          "name": "标准版",
+          "subtitle": "基础配置",
+          "price": 1299,
+          "originalPrice": 1599,
+          "stock": 45,
+          "sku": "VACUUM-V1-1"
+        },
+        {
+          "id": "vacuum-v1-v2",
+          "name": "全能吸头版",
+          "subtitle": "增强配置",
+          "price": 1699,
+          "originalPrice": 1999,
+          "stock": 37,
+          "sku": "VACUUM-V1-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T13:46:02.271Z"
+    },
+    {
+      "id": "mite-m1",
+      "name": "星野 智能除螨仪 M1",
+      "subtitle": "热风除湿 · 紫外线除螨 · 拍打吸尘",
+      "category": "cleaning",
+      "badge": "智能生活新品",
+      "images": [
+        "images/robot-vacuum.svg",
+        "images/living.jpg"
+      ],
+      "rating": 4.8,
+      "reviews": 680,
+      "sold": 3200,
+      "description": "星野 智能除螨仪 M1面向家庭日常场景设计，提供不同配置版本，兼顾性能、维护便利性和价格。",
+      "features": [
+        "App 智能控制",
+        "低噪运行",
+        "节能模式",
+        "一年以上整机质保"
+      ],
+      "specs": {
+        "控制方式": "App / 按键",
+        "额定功率": "45W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "mite-m1-v1",
+          "name": "标准版",
+          "subtitle": "基础配置",
+          "price": 499,
+          "originalPrice": 699,
+          "stock": 45,
+          "sku": "MITE-M1-1"
+        },
+        {
+          "id": "mite-m1-v2",
+          "name": "深度清洁版",
+          "subtitle": "增强配置",
+          "price": 699,
+          "originalPrice": 899,
+          "stock": 37,
+          "sku": "MITE-M1-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T13:46:02.271Z"
+    },
+    {
+      "id": "fan-f2",
+      "name": "星野 空气循环扇 F2",
+      "subtitle": "直流变频 · 12 档风速 · 全屋循环",
+      "category": "air",
+      "badge": "智能生活新品",
+      "images": [
+        "images/air-purifier.svg",
+        "images/living.jpg"
+      ],
+      "rating": 4.8,
+      "reviews": 680,
+      "sold": 3200,
+      "description": "星野 空气循环扇 F2面向家庭日常场景设计，提供不同配置版本，兼顾性能、维护便利性和价格。",
+      "features": [
+        "App 智能控制",
+        "低噪运行",
+        "节能模式",
+        "一年以上整机质保"
+      ],
+      "specs": {
+        "控制方式": "App / 按键",
+        "额定功率": "45W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "fan-f2-v1",
+          "name": "遥控版",
+          "subtitle": "基础配置",
+          "price": 599,
+          "originalPrice": 799,
+          "stock": 45,
+          "sku": "FAN-F2-1"
+        },
+        {
+          "id": "fan-f2-v2",
+          "name": "净化循环版",
+          "subtitle": "增强配置",
+          "price": 899,
+          "originalPrice": 1099,
+          "stock": 37,
+          "sku": "FAN-F2-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T13:46:02.271Z"
+    },
+    {
+      "id": "aroma-a1",
+      "name": "星野 智能香薰机 A1",
+      "subtitle": "超声波雾化 · 定时 · 氛围灯",
+      "category": "air",
+      "badge": "智能生活新品",
+      "images": [
+        "images/humidifier.svg",
+        "images/living.jpg"
+      ],
+      "rating": 4.8,
+      "reviews": 680,
+      "sold": 3200,
+      "description": "星野 智能香薰机 A1面向家庭日常场景设计，提供不同配置版本，兼顾性能、维护便利性和价格。",
+      "features": [
+        "App 智能控制",
+        "低噪运行",
+        "节能模式",
+        "一年以上整机质保"
+      ],
+      "specs": {
+        "控制方式": "App / 按键",
+        "额定功率": "45W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "aroma-a1-v1",
+          "name": "标准版",
+          "subtitle": "基础配置",
+          "price": 299,
+          "originalPrice": 399,
+          "stock": 45,
+          "sku": "AROMA-A1-1"
+        },
+        {
+          "id": "aroma-a1-v2",
+          "name": "App 联动版",
+          "subtitle": "增强配置",
+          "price": 399,
+          "originalPrice": 499,
+          "stock": 37,
+          "sku": "AROMA-A1-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T13:46:02.271Z"
+    },
+    {
+      "id": "monitor-s1",
+      "name": "星野 屏幕挂灯 S1",
+      "subtitle": "非对称光路 · 无频闪 · 自动感光",
+      "category": "light",
+      "badge": "智能生活新品",
+      "images": [
+        "images/lamp.jpg",
+        "images/living.jpg"
+      ],
+      "rating": 4.8,
+      "reviews": 680,
+      "sold": 3200,
+      "description": "星野 屏幕挂灯 S1面向家庭日常场景设计，提供不同配置版本，兼顾性能、维护便利性和价格。",
+      "features": [
+        "App 智能控制",
+        "低噪运行",
+        "节能模式",
+        "一年以上整机质保"
+      ],
+      "specs": {
+        "控制方式": "App / 按键",
+        "额定功率": "45W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "monitor-s1-v1",
+          "name": "标准版",
+          "subtitle": "基础配置",
+          "price": 399,
+          "originalPrice": 499,
+          "stock": 45,
+          "sku": "MONITOR-S1-1"
+        },
+        {
+          "id": "monitor-s1-v2",
+          "name": "无线旋钮版",
+          "subtitle": "增强配置",
+          "price": 599,
+          "originalPrice": 699,
+          "stock": 37,
+          "sku": "MONITOR-S1-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T13:46:02.271Z"
+    },
+    {
+      "id": "capsule-c3",
+      "name": "星野 胶囊咖啡机 C3",
+      "subtitle": "19Bar 萃取 · 一键浓缩 · 小巧机身",
+      "category": "coffee",
+      "badge": "智能生活新品",
+      "images": [
+        "images/coffee.jpg",
+        "images/living.jpg"
+      ],
+      "rating": 4.8,
+      "reviews": 680,
+      "sold": 3200,
+      "description": "星野 胶囊咖啡机 C3面向家庭日常场景设计，提供不同配置版本，兼顾性能、维护便利性和价格。",
+      "features": [
+        "App 智能控制",
+        "低噪运行",
+        "节能模式",
+        "一年以上整机质保"
+      ],
+      "specs": {
+        "控制方式": "App / 按键",
+        "额定功率": "45W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "capsule-c3-v1",
+          "name": "标准版",
+          "subtitle": "基础配置",
+          "price": 899,
+          "originalPrice": 1099,
+          "stock": 45,
+          "sku": "CAPSULE-C3-1"
+        },
+        {
+          "id": "capsule-c3-v2",
+          "name": "奶泡套装版",
+          "subtitle": "增强配置",
+          "price": 1199,
+          "originalPrice": 1399,
+          "stock": 37,
+          "sku": "CAPSULE-C3-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T13:46:02.271Z"
+    },
+    {
+      "id": "turntable-r1",
+      "name": "星野 蓝牙唱片机 R1",
+      "subtitle": "复古外观 · 蓝牙 5.3 · 内置双扬声器",
+      "category": "entertainment",
+      "badge": "智能生活新品",
+      "images": [
+        "images/speaker.jpg",
+        "images/living.jpg"
+      ],
+      "rating": 4.8,
+      "reviews": 680,
+      "sold": 3200,
+      "description": "星野 蓝牙唱片机 R1面向家庭日常场景设计，提供不同配置版本，兼顾性能、维护便利性和价格。",
+      "features": [
+        "App 智能控制",
+        "低噪运行",
+        "节能模式",
+        "一年以上整机质保"
+      ],
+      "specs": {
+        "控制方式": "App / 按键",
+        "额定功率": "45W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "turntable-r1-v1",
+          "name": "标准版",
+          "subtitle": "基础配置",
+          "price": 799,
+          "originalPrice": 999,
+          "stock": 45,
+          "sku": "TURNTABLE-R1-1"
+        },
+        {
+          "id": "turntable-r1-v2",
+          "name": "Hi-Fi 音箱版",
+          "subtitle": "增强配置",
+          "price": 1099,
+          "originalPrice": 1299,
+          "stock": 37,
+          "sku": "TURNTABLE-R1-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T13:46:02.271Z"
+    },
+    {
+      "id": "doorbell-b2",
+      "name": "星野 2K 智能门铃 B2",
+      "subtitle": "2K 画面 · 人形侦测 · 双向通话",
+      "category": "security",
+      "badge": "智能生活新品",
+      "images": [
+        "images/smart-lock.svg",
+        "images/living.jpg"
+      ],
+      "rating": 4.8,
+      "reviews": 680,
+      "sold": 3200,
+      "description": "星野 2K 智能门铃 B2面向家庭日常场景设计，提供不同配置版本，兼顾性能、维护便利性和价格。",
+      "features": [
+        "App 智能控制",
+        "低噪运行",
+        "节能模式",
+        "一年以上整机质保"
+      ],
+      "specs": {
+        "控制方式": "App / 按键",
+        "额定功率": "45W",
+        "保修": "整机 1-2 年"
+      },
+      "variants": [
+        {
+          "id": "doorbell-b2-v1",
+          "name": "64GB 版",
+          "subtitle": "基础配置",
+          "price": 399,
+          "originalPrice": 499,
+          "stock": 45,
+          "sku": "DOORBELL-B2-1"
+        },
+        {
+          "id": "doorbell-b2-v2",
+          "name": "云存储版",
+          "subtitle": "增强配置",
+          "price": 599,
+          "originalPrice": 699,
+          "stock": 37,
+          "sku": "DOORBELL-B2-2"
+        }
+      ],
+      "warranty": "整机 1 年，核心部件 2 年",
+      "status": "active",
+      "createdAt": "2026-10-04T13:46:02.271Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_demo_1001",
+      "orderNo": "XY202609280001",
+      "createdAt": "2026-09-28T10:26:00.000Z",
+      "updatedAt": "2026-09-29T03:12:00.000Z",
+      "status": "shipped",
+      "statusHistory": [
+        {
+          "status": "paid",
+          "label": "已付款",
+          "at": "2026-09-28T10:26:00.000Z",
+          "note": "支付成功"
+        },
+        {
+          "status": "packed",
+          "label": "已出库",
+          "at": "2026-09-29T01:20:00.000Z",
+          "note": "杭州仓已出库"
+        },
+        {
+          "status": "shipped",
+          "label": "运输中",
+          "at": "2026-09-29T03:12:00.000Z",
+          "note": "顺丰速运 SF142938201938"
+        }
+      ],
+      "customer": {
+        "name": "陈先生",
+        "phone": "13800138001",
+        "email": "chen@example.com"
+      },
+      "address": {
+        "province": "浙江省",
+        "city": "杭州市",
+        "district": "西湖区",
+        "detail": "文三路 88 号 2 幢 1203 室",
+        "postalCode": "310012"
+      },
+      "items": [
+        {
+          "productId": "r1-pro",
+          "variantId": "r1-dock",
+          "name": "星野 扫拖机器人 R1 Pro",
+          "variantName": "自动集尘版",
+          "price": 2199,
+          "qty": 1,
+          "image": "/images/cleaning.jpg"
+        },
+        {
+          "productId": "l2",
+          "variantId": "l2-auto",
+          "name": "星野 智能护眼台灯 L2",
+          "variantName": "自动感光版",
+          "price": 499,
+          "qty": 1,
+          "image": "/images/lamp.jpg"
+        }
+      ],
+      "subtotal": 2698,
+      "discount": 100,
+      "shipping": 0,
+      "total": 2598,
+      "coupon": {
+        "code": "NEW100",
+        "title": "新客立减 100 元",
+        "amount": 100
+      },
+      "paymentMethod": "wechat",
+      "invoice": {
+        "needed": false,
+        "type": "personal",
+        "title": "",
+        "taxNo": ""
+      },
+      "shippingCompany": "顺丰速运",
+      "trackingNo": "SF142938201938",
+      "customerNote": "工作日送达，放前台前请电话联系。"
+    },
+    {
+      "id": "ord_demo_1002",
+      "orderNo": "XY202609300002",
+      "createdAt": "2026-09-30T06:42:00.000Z",
+      "updatedAt": "2026-09-30T07:15:00.000Z",
+      "status": "packed",
+      "statusHistory": [
+        {
+          "status": "paid",
+          "label": "已付款",
+          "at": "2026-09-30T06:42:00.000Z",
+          "note": "支付成功"
+        },
+        {
+          "status": "packed",
+          "label": "已出库",
+          "at": "2026-09-30T07:15:00.000Z",
+          "note": "苏州仓已出库"
+        }
+      ],
+      "customer": {
+        "name": "林女士",
+        "phone": "13900139002",
+        "email": "lin@example.com"
+      },
+      "address": {
+        "province": "江苏省",
+        "city": "苏州市",
+        "district": "工业园区",
+        "detail": "星湖街 168 号 A 座 906",
+        "postalCode": "215000"
+      },
+      "items": [
+        {
+          "productId": "c2",
+          "variantId": "c2-latte",
+          "name": "星野 全自动咖啡机 C2",
+          "variantName": "自动奶咖版",
+          "price": 3599,
+          "qty": 1,
+          "image": "/images/coffee.jpg"
+        }
+      ],
+      "subtotal": 3599,
+      "discount": 100,
+      "shipping": 0,
+      "total": 3499,
+      "coupon": {
+        "code": "NEW100",
+        "title": "新客立减 100 元",
+        "amount": 100
+      },
+      "paymentMethod": "alipay",
+      "invoice": {
+        "needed": true,
+        "type": "company",
+        "title": "苏州青禾设计有限公司",
+        "taxNo": "91320594MA27X8X8X8"
+      },
+      "shippingCompany": "京东物流",
+      "trackingNo": "JDVA00912837461",
+      "customerNote": "请开具电子专票。"
+    },
+    {
+      "id": "ord_demo_1003",
+      "orderNo": "XY202610030003",
+      "createdAt": "2026-10-03T02:08:00.000Z",
+      "updatedAt": "2026-10-03T02:08:00.000Z",
+      "status": "paid",
+      "statusHistory": [
+        {
+          "status": "paid",
+          "label": "已付款",
+          "at": "2026-10-03T02:08:00.000Z",
+          "note": "支付成功，等待仓库处理"
+        }
+      ],
+      "customer": {
+        "name": "周先生",
+        "phone": "13700137003",
+        "email": "zhou@example.com"
+      },
+      "address": {
+        "province": "广东省",
+        "city": "深圳市",
+        "district": "南山区",
+        "detail": "科技园科苑路 15 号 5 栋 1806",
+        "postalCode": "518000"
+      },
+      "items": [
+        {
+          "productId": "p1",
+          "variantId": "p1-bright",
+          "name": "星野 便携投影仪 P1",
+          "variantName": "高亮版",
+          "price": 2399,
+          "qty": 1,
+          "image": "/images/projector.jpg"
+        },
+        {
+          "productId": "s2",
+          "variantId": "s2-stereo",
+          "name": "星野 桌面无线音箱 S2",
+          "variantName": "立体声套装",
+          "price": 899,
+          "qty": 1,
+          "image": "/images/speaker.jpg"
+        }
+      ],
+      "subtotal": 3298,
+      "discount": 100,
+      "shipping": 0,
+      "total": 3198,
+      "coupon": {
+        "code": "NEW100",
+        "title": "新客立减 100 元",
+        "amount": 100
+      },
+      "paymentMethod": "unionpay",
+      "invoice": {
+        "needed": false,
+        "type": "personal",
+        "title": "",
+        "taxNo": ""
+      },
+      "shippingCompany": "",
+      "trackingNo": "",
+      "customerNote": "周末全天可收货。"
+    }
+  ],
+  "supportThreads": [
+    {
+      "id": "sup_demo_1",
+      "sessionId": "demo-session-01",
+      "createdAt": "2026-10-03T01:34:00.000Z",
+      "updatedAt": "2026-10-03T01:41:00.000Z",
+      "status": "resolved",
+      "unreadAdmin": 0,
+      "unreadUser": 0,
+      "messages": [
+        {
+          "id": "msg_1",
+          "sender": "user",
+          "text": "R1 Pro 三个版本主要差在哪？",
+          "at": "2026-10-03T01:34:00.000Z"
+        },
+        {
+          "id": "msg_2",
+          "sender": "bot",
+          "text": "标准版支持 55°C 热水洗拖布，自动集尘版增加集尘基站，全能基站版再把洗、烘、集尘整合到同一基站。预算允许的话，全能基站版日常维护最省心。",
+          "at": "2026-10-03T01:34:05.000Z"
+        },
+        {
+          "id": "msg_3",
+          "sender": "user",
+          "text": "订单 XY202609280001 到哪了？",
+          "at": "2026-10-03T01:40:00.000Z"
+        },
+        {
+          "id": "msg_4",
+          "sender": "human",
+          "text": "您的订单已由顺丰速运发出，运单号 SF142938201938，预计明天 18 点前送达。",
+          "at": "2026-10-03T01:41:00.000Z"
+        }
+      ]
+    }
+  ],
+  "auditLog": [
+    {
+      "id": "audit_1",
+      "action": "system.init",
+      "actor": "system",
+      "at": "2026-10-03T00:00:00.000Z",
+      "detail": "初始化演示数据"
+    }
+  ]
+}
