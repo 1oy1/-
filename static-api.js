@@ -1,4 +1,4 @@
-const DB_KEY = 'xingye_static_database_v4';
+const DB_KEY = 'xingye_static_database_v5';
 const ADMIN_KEY = 'xingye_static_admin_session';
 const ORDER_STATUS = ['paid', 'packed', 'shipped', 'delivered', 'cancelled', 'refunded'];
 const STATUS_LABELS = {
