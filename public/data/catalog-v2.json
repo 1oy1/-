@@ -84,9 +84,9 @@
       "category": "cleaning",
       "badge": "热销 TOP 1",
       "images": [
+        "images/products/r1-pro.svg",
         "images/robot-vacuum.svg",
-        "/images/living.jpg",
-        "/images/hero.jpg"
+        "/images/living.jpg"
       ],
       "rating": 4.9,
       "reviews": 3268,
@@ -145,6 +145,7 @@
       "category": "cleaning",
       "badge": "新品",
       "images": [
+        "images/products/w2.svg",
         "images/robot-vacuum.svg",
         "/images/living.jpg"
       ],
@@ -205,6 +206,7 @@
       "category": "air",
       "badge": "母婴推荐",
       "images": [
+        "images/products/a3.svg",
         "images/air-purifier.svg",
         "/images/hero.jpg"
       ],
@@ -265,6 +267,7 @@
       "category": "air",
       "badge": "",
       "images": [
+        "images/products/h1.svg",
         "images/humidifier.svg",
         "/images/living.jpg"
       ],
@@ -316,6 +319,7 @@
       "category": "light",
       "badge": "学生优选",
       "images": [
+        "images/products/l2.svg",
         "/images/lamp.jpg",
         "/images/lamp-room.jpg"
       ],
@@ -367,6 +371,7 @@
       "category": "light",
       "badge": "设计师款",
       "images": [
+        "images/products/f1.svg",
         "/images/floor-lamp.jpg",
         "/images/lamp-room.jpg"
       ],
@@ -418,6 +423,7 @@
       "category": "coffee",
       "badge": "口碑好物",
       "images": [
+        "images/products/c1.svg",
         "/images/coffee.jpg",
         "/images/living.jpg"
       ],
@@ -469,6 +475,7 @@
       "category": "coffee",
       "badge": "",
       "images": [
+        "images/products/c2.svg",
         "/images/coffee.jpg",
         "/images/lamp-room.jpg"
       ],
@@ -520,6 +527,7 @@
       "category": "entertainment",
       "badge": "影音新品",
       "images": [
+        "images/products/p1.svg",
         "/images/projector.jpg",
         "/images/living.jpg"
       ],
@@ -571,6 +579,7 @@
       "category": "entertainment",
       "badge": "",
       "images": [
+        "images/products/s2.svg",
         "/images/speaker.jpg",
         "/images/living.jpg"
       ],
@@ -621,6 +630,7 @@
       "category": "security",
       "badge": "",
       "images": [
+        "images/products/d3.svg",
         "images/smart-lock.svg",
         "/images/hero.jpg"
       ],
@@ -681,6 +691,7 @@
       "category": "security",
       "badge": "居家守护",
       "images": [
+        "images/products/cam2.svg",
         "/images/security.jpg",
         "/images/living.jpg"
       ],
@@ -741,6 +752,7 @@
       "category": "cleaning",
       "badge": "智能生活新品",
       "images": [
+        "images/products/vacuum-v1.svg",
         "images/robot-vacuum.svg",
         "images/living.jpg"
       ],
@@ -790,6 +802,7 @@
       "category": "cleaning",
       "badge": "智能生活新品",
       "images": [
+        "images/products/mite-m1.svg",
         "images/robot-vacuum.svg",
         "images/living.jpg"
       ],
@@ -839,6 +852,7 @@
       "category": "air",
       "badge": "智能生活新品",
       "images": [
+        "images/products/fan-f2.svg",
         "images/air-purifier.svg",
         "images/living.jpg"
       ],
@@ -888,6 +902,7 @@
       "category": "air",
       "badge": "智能生活新品",
       "images": [
+        "images/products/aroma-a1.svg",
         "images/humidifier.svg",
         "images/living.jpg"
       ],
@@ -937,6 +952,7 @@
       "category": "light",
       "badge": "智能生活新品",
       "images": [
+        "images/products/monitor-s1.svg",
         "images/lamp.jpg",
         "images/living.jpg"
       ],
@@ -986,6 +1002,7 @@
       "category": "coffee",
       "badge": "智能生活新品",
       "images": [
+        "images/products/capsule-c3.svg",
         "images/coffee.jpg",
         "images/living.jpg"
       ],
@@ -1035,6 +1052,7 @@
       "category": "entertainment",
       "badge": "智能生活新品",
       "images": [
+        "images/products/turntable-r1.svg",
         "images/speaker.jpg",
         "images/living.jpg"
       ],
@@ -1084,6 +1102,7 @@
       "category": "security",
       "badge": "智能生活新品",
       "images": [
+        "images/products/doorbell-b2.svg",
         "images/smart-lock.svg",
         "images/living.jpg"
       ],
@@ -1133,6 +1152,7 @@
       "category": "air",
       "badge": "智能生活新品",
       "images": [
+        "images/products/dehumidifier-d1.svg",
         "images/air-purifier.svg",
         "images/living.jpg"
       ],
@@ -1182,6 +1202,7 @@
       "category": "air",
       "badge": "智能生活新品",
       "images": [
+        "images/products/water-w3.svg",
         "images/air-purifier.svg",
         "images/living.jpg"
       ],
@@ -1231,6 +1252,7 @@
       "category": "air",
       "badge": "智能生活新品",
       "images": [
+        "images/products/air-monitor-q1.svg",
         "images/air-purifier.svg",
         "images/living.jpg"
       ],
@@ -1280,6 +1302,7 @@
       "category": "light",
       "badge": "智能生活新品",
       "images": [
+        "images/products/bedside-lamp-n1.svg",
         "images/lamp.jpg",
         "images/living.jpg"
       ],
@@ -1329,6 +1352,7 @@
       "category": "cleaning",
       "badge": "智能生活新品",
       "images": [
+        "images/products/floor-washer-s3.svg",
         "images/robot-vacuum.svg",
         "images/living.jpg"
       ],
@@ -1378,6 +1402,7 @@
       "category": "cleaning",
       "badge": "智能生活新品",
       "images": [
+        "images/products/vacuum-v2.svg",
         "images/robot-vacuum.svg",
         "images/living.jpg"
       ],
@@ -1427,6 +1452,7 @@
       "category": "entertainment",
       "badge": "智能生活新品",
       "images": [
+        "images/products/speaker-s3.svg",
         "images/speaker.jpg",
         "images/living.jpg"
       ],
@@ -1476,6 +1502,7 @@
       "category": "entertainment",
       "badge": "智能生活新品",
       "images": [
+        "images/products/projector-p2.svg",
         "images/projector.jpg",
         "images/living.jpg"
       ],
@@ -1525,6 +1552,7 @@
       "category": "security",
       "badge": "智能生活新品",
       "images": [
+        "images/products/camera-c4.svg",
         "images/security.jpg",
         "images/living.jpg"
       ],
@@ -1574,6 +1602,7 @@
       "category": "security",
       "badge": "智能生活新品",
       "images": [
+        "images/products/sensor-t1.svg",
         "images/smart-lock.svg",
         "images/living.jpg"
       ],

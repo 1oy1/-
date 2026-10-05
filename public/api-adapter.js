@@ -1,4 +1,4 @@
-import { staticApi, isStaticMode } from './static-api.js?v=4';
+import { staticApi, isStaticMode } from './static-api.js?v=5';
 
 export async function api(url, options = {}) {
   if (isStaticMode()) return staticApi(url, options);
